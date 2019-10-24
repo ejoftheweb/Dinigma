@@ -1,4 +1,4 @@
-package utils;
+package uk.co.platosys.dinigma.utils;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -14,6 +14,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Date;
 
@@ -21,10 +22,10 @@ import java.util.Date;
 
 public class MinigmaUtils {
 
-	static PGPCompressedDataGenerator compressor = new PGPCompressedDataGenerator(Minigma.COMPRESS_ALGORITHM);
-	static PGPLiteralDataGenerator literalDataGenerator = new PGPLiteralDataGenerator();
-	static Base64.Encoder encoder= Base64.getUrlEncoder();
-	static Base64.Decoder decoder=Base64.getUrlDecoder();
+	private static PGPCompressedDataGenerator compressor = new PGPCompressedDataGenerator(Minigma.COMPRESS_ALGORITHM);
+	private static PGPLiteralDataGenerator literalDataGenerator = new PGPLiteralDataGenerator();
+	private static Base64.Encoder encoder= Base64.getUrlEncoder();
+	private static Base64.Decoder decoder=Base64.getUrlDecoder();
 	//static final int B64 =(Base64.URL_SAFE+ Base64.NO_WRAP);
 	private static Logger log = LogManager.getRootLogger();
 	private static Marker mark = MarkerManager.getMarker("MinigmaUtils");
@@ -38,11 +39,11 @@ public class MinigmaUtils {
 	}
 	 /**converts an org.jdom2.Document into an array of bytes**/
 	 public static byte[] toByteArray(String string){
-		return string.getBytes(Charset.forName("UTF-8"));
+		return string.getBytes(StandardCharsets.UTF_8);
 	 }
 	 /**converts an array of bytes into a String*/
 	 public static String fromByteArray(byte[] asBytes){
-		 return new String(asBytes, Charset.forName("UTF-8"));
+		 return new String(asBytes, StandardCharsets.UTF_8);
 	 }
 	 /**compresses a byte array of clear data
 	  * @param clearData a byte-array of clear, uncompressed data

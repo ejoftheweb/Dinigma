@@ -12,7 +12,7 @@ Platosys software can also be licensed on negotiated terms if the GPL is inappro
 For further information about this, please contact software.licensing@platosys.co.uk
  */
 
-package engines;
+package uk.co.platosys.dinigma.engines;
 
 
 import org.apache.logging.log4j.LogManager;

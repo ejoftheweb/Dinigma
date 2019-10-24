@@ -19,7 +19,7 @@
  * for more information contact edward.barrow@platosys.co.uk
  */
 
-package utils;
+package uk.co.platosys.dinigma.utils;
 
 import java.io.*;
 

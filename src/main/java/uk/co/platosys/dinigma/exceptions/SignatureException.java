@@ -11,19 +11,25 @@ publish the modified code you may only do so under the GPL, and (if asked) you m
 Platosys software can also be licensed on negotiated terms if the GPL is inappropriate.
 For further information about this, please contact software.licensing@platosys.co.uk
  */
-package exceptions;
+
+package uk.co.platosys.dinigma.exceptions;
 
 /**
  *
  * @author edward
  */
-public class UnsupportedAlgorithmException extends Exception {
+public class SignatureException extends Exception {
 
-   private static final long serialVersionUID = -9125628964320365473L;
-    public UnsupportedAlgorithmException() {
+    private static final long serialVersionUID = 1L;
+	
+    public SignatureException() {
     }
 
-    public UnsupportedAlgorithmException(String msg) {
+    public SignatureException(String msg) {
         super(msg);
+    }
+     
+    public SignatureException(String msg, Throwable cause) {
+        super(msg, cause);
     }
 }

@@ -16,7 +16,7 @@
  * 
  */
 
-
+package uk.co.platosys.dinigma;
 import org.bouncycastle.bcpg.ArmoredOutputStream;
 import org.bouncycastle.bcpg.HashAlgorithmTags;
 import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
@@ -49,7 +49,7 @@ import java.util.Date;
  * But they have the same passphrase.
  */
 public class LockSmith {
-	private static String PROVIDER="SC";
+	private static String PROVIDER="BC";
 	static final String SIGNATURE_ALGORITHM = "DSA";
 	static final String ASYMMETRIC_ALGORITHM="ELGAMAL";
     static final int SIGNATURE_ALGORITHM_TAG=PublicKeyAlgorithmTags.DSA;     

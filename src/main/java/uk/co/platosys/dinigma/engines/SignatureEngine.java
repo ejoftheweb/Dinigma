@@ -11,7 +11,7 @@ publish the modified code you may only do so under the GPL, and (if asked) you m
 Platosys software can also be licensed on negotiated terms if the GPL is inappropriate.
 For further information about this, please contact software.licensing@platosys.co.uk
  */
-package engines;
+package uk.co.platosys.dinigma.engines;
 
 
 import org.apache.logging.log4j.LogManager;

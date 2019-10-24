@@ -16,7 +16,7 @@
  * 
  * 
  */
-
+package uk.co.platosys.dinigma;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

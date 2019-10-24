@@ -11,7 +11,7 @@ publish the modified code you may only do so under the GPL, and (if asked) you m
 Platosys software can also be licensed on negotiated terms if the GPL is inappropriate.
 For further information about this, please contact software.licensing@platosys.co.uk
  */
-package utils;
+package uk.co.platosys.dinigma.utils;
 
 import java.nio.ByteBuffer;
 import java.nio.LongBuffer;
@@ -32,9 +32,9 @@ import java.security.SecureRandom;
  * 
  */
 public class Kidney {
-     static final SecureRandom RANDOM=new SecureRandom();
+     private static final SecureRandom RANDOM=new SecureRandom();
 
-     static final char[] HEX_CHAR_TABLE = {
+     private static final char[] HEX_CHAR_TABLE = {
     '0', '1', '2', '3','4', '5', '6', '7','8', '9', 'a', 'b','c','d', 'e', 'f'
   };    
 

@@ -2,7 +2,7 @@
  * Created 9 Dec 2016
  * www.platosys.co.uk 
  */
-
+package uk.co.platosys.dinigma;
 import org.bouncycastle.bcpg.CompressionAlgorithmTags;
 import org.bouncycastle.bcpg.HashAlgorithmTags;
 import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
