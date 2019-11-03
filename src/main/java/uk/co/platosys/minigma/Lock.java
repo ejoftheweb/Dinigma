@@ -12,7 +12,7 @@ Platosys software can also be licensed on negotiated terms if the GPL is inappro
 For further information about this, please contact software.licensing@platosys.co.uk
  */
 
-package uk.co.platosys.dinigma;
+package uk.co.platosys.minigma;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,13 +22,13 @@ import org.bouncycastle.bcpg.ArmoredInputStream;
 import org.bouncycastle.openpgp.*;
 import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
 import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
-import uk.co.platosys.dinigma.engines.CryptoEngine;
-import uk.co.platosys.dinigma.engines.SignatureEngine;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.exceptions.SignatureException;
-import uk.co.platosys.dinigma.exceptions.UnsupportedAlgorithmException;
-import uk.co.platosys.dinigma.utils.Kidney;
-import uk.co.platosys.dinigma.utils.MinigmaUtils;
+import uk.co.platosys.minigma.engines.CryptoEngine;
+import uk.co.platosys.minigma.engines.SignatureEngine;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.exceptions.SignatureException;
+import uk.co.platosys.minigma.exceptions.UnsupportedAlgorithmException;
+import uk.co.platosys.minigma.utils.Kidney;
+import uk.co.platosys.minigma.utils.MinigmaUtils;
 
 import java.io.*;
 import java.util.Iterator;

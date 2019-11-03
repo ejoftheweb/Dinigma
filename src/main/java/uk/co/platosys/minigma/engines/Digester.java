@@ -12,7 +12,7 @@ Platosys software can also be licensed on negotiated terms if the GPL is inappro
 For further information about this, please contact software.licensing@platosys.co.uk
  */
 
-package uk.co.platosys.dinigma.engines;
+package uk.co.platosys.minigma.engines;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -21,9 +21,13 @@ import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 import org.bouncycastle.crypto.digests.KeccakDigest;
 import org.bouncycastle.crypto.digests.SHA3Digest;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.utils.MinigmaUtils;
-
+import org.bouncycastle.openpgp.PGPSignature;
+import uk.co.platosys.minigma.exceptions.Exceptions;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.utils.MinigmaUtils;
+import net.jpountz.xxhash.XXHash64;
+import net.jpountz.xxhash.XXHashFactory;
+import java.io.IOException;
 import java.nio.charset.Charset;
 
 
@@ -58,6 +62,31 @@ public class Digester {
        throw new MinigmaException("error making digest", e);
     }
    }
-   
+    /**
+     * This returns a short String which is a non-cryptographic hash of
+     * the supplied byte array. The short hashes so obtained are used as identifiers
+     * and filenames for Signatures.
+     * @param bytes
+     * @return
+     * @throws MinigmaException
+     */
+    public static String shortDigest (byte[] bytes) {
+        try{ XXHashFactory xxHashFactory = XXHashFactory.fastestInstance();
+            XXHash64 xxHash64 = xxHashFactory.hash64();
+            long longHash = xxHash64.hash(bytes, 0, 0, 0);
+            return(MinigmaUtils.encode(longHash));
+        }catch(Exception e){
+            Exceptions.dump(e);
+            return null;
+        }
+    }
+    public static String shortDigest (PGPSignature signature) {
+        try {
+            return shortDigest(signature.getEncoded());
+        }catch(IOException iox){
+            Exceptions.dump(iox);
+            return null;
+        }
+    }
   
 }

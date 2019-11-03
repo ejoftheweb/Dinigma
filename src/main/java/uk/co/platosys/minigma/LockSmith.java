@@ -16,7 +16,7 @@
  * 
  */
 
-package uk.co.platosys.dinigma;
+package uk.co.platosys.minigma;
 import org.bouncycastle.bcpg.ArmoredOutputStream;
 import org.bouncycastle.bcpg.HashAlgorithmTags;
 import org.bouncycastle.bcpg.PublicKeyAlgorithmTags;
@@ -30,8 +30,8 @@ import org.bouncycastle.openpgp.operator.jcajce.JcaPGPContentSignerBuilder;
 import org.bouncycastle.openpgp.operator.jcajce.JcaPGPDigestCalculatorProviderBuilder;
 import org.bouncycastle.openpgp.operator.jcajce.JcaPGPKeyPair;
 import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyEncryptorBuilder;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.utils.FileTools;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.utils.FileTools;
 
 import java.io.File;
 import java.io.FileOutputStream;

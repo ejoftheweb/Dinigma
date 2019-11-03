@@ -2,16 +2,16 @@
  * Created 9 Dec 2016
  * www.platosys.co.uk 
  */
-package uk.co.platosys.dinigma;
+package uk.co.platosys.minigma;
 import org.bouncycastle.bcpg.CompressionAlgorithmTags;
 import org.bouncycastle.bcpg.HashAlgorithmTags;
 import org.bouncycastle.bcpg.SymmetricKeyAlgorithmTags;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import uk.co.platosys.dinigma.engines.CryptoEngine;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.exceptions.SignatureException;
-import uk.co.platosys.dinigma.exceptions.UnsupportedAlgorithmException;
-import uk.co.platosys.dinigma.utils.MinigmaUtils;
+import uk.co.platosys.minigma.engines.CryptoEngine;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.exceptions.SignatureException;
+import uk.co.platosys.minigma.exceptions.UnsupportedAlgorithmException;
+import uk.co.platosys.minigma.utils.MinigmaUtils;
 
 import java.io.ByteArrayInputStream;
 import java.security.Provider;

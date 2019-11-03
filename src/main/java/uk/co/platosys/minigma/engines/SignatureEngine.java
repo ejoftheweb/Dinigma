@@ -11,7 +11,7 @@ publish the modified code you may only do so under the GPL, and (if asked) you m
 Platosys software can also be licensed on negotiated terms if the GPL is inappropriate.
 For further information about this, please contact software.licensing@platosys.co.uk
  */
-package uk.co.platosys.dinigma.engines;
+package uk.co.platosys.minigma.engines;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -28,12 +28,12 @@ import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
 import org.bouncycastle.openpgp.operator.jcajce.JcaPGPContentSignerBuilder;
 import org.bouncycastle.openpgp.operator.jcajce.JcaPGPContentVerifierBuilderProvider;
 import org.bouncycastle.openpgp.operator.jcajce.JcePBESecretKeyDecryptorBuilder;
-import uk.co.platosys.dinigma.Key;
-import uk.co.platosys.dinigma.Lock;
-import uk.co.platosys.dinigma.Minigma;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.utils.Kidney;
-import uk.co.platosys.dinigma.utils.MinigmaUtils;
+import uk.co.platosys.minigma.Key;
+import uk.co.platosys.minigma.Lock;
+import uk.co.platosys.minigma.Minigma;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.utils.Kidney;
+import uk.co.platosys.minigma.utils.MinigmaUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

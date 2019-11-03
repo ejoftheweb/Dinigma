@@ -12,7 +12,7 @@ Platosys software can also be licensed on negotiated terms if the GPL is inappro
 For further information about this, please contact software.licensing@platosys.co.uk
  */
 
-package uk.co.platosys.dinigma;
+package uk.co.platosys.minigma;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
@@ -24,12 +24,12 @@ import org.bouncycastle.openpgp.PGPSecretKeyRingCollection;
 import org.bouncycastle.openpgp.PGPUtil;
 import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
 import org.bouncycastle.openpgp.operator.bc.BcKeyFingerprintCalculator;
-import uk.co.platosys.dinigma.engines.CryptoEngine;
-import uk.co.platosys.dinigma.engines.Digester;
-import uk.co.platosys.dinigma.engines.SignatureEngine;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
-import uk.co.platosys.dinigma.utils.Kidney;
-import uk.co.platosys.dinigma.utils.MinigmaUtils;
+import uk.co.platosys.minigma.engines.CryptoEngine;
+import uk.co.platosys.minigma.engines.Digester;
+import uk.co.platosys.minigma.engines.SignatureEngine;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.utils.Kidney;
+import uk.co.platosys.minigma.utils.MinigmaUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;

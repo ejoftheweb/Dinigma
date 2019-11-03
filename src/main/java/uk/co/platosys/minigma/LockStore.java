@@ -16,7 +16,7 @@
  * 
  * 
  */
-package uk.co.platosys.dinigma;
+package uk.co.platosys.minigma;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,7 +29,7 @@ import org.bouncycastle.openpgp.PGPPublicKeyRing;
 import org.bouncycastle.openpgp.PGPPublicKeyRingCollection;
 import org.bouncycastle.openpgp.operator.KeyFingerPrintCalculator;
 import org.bouncycastle.openpgp.operator.jcajce.JcaKeyFingerprintCalculator;
-import uk.co.platosys.dinigma.exceptions.MinigmaException;
+import uk.co.platosys.minigma.exceptions.MinigmaException;
 
 import java.io.*;
 import java.util.ArrayList;
